@@ -1,0 +1,29 @@
+﻿@model List<ComicCorner.Models.Comic>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Comics</h2>
+<form method="GET" action="/Comic/List">
+    <!--GET -->
+    <input type="text" id="ComicSearchKey" name="ComicSearchKey" />
+    <input type="submit" value="Search" />
+</form>
+<div class="flexbox">
+    <div class="picture"></div>
+    <div class="content">
+        @{
+            foreach (var Comic in Model)
+            {
+                <div><a href="/Comic/Show/@Comic.ComicId">@Comic.ComicName</a></div>
+                <div>Description: @Comic.ComicDesc</div>
+            }
+        }
+    </div>
+    
+</div>
+
+<a href="/Comic/Add">Add a comic</a>
+
+
+

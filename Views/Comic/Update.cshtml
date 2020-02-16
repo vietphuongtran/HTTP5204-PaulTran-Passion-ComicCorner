@@ -1,0 +1,27 @@
+﻿@model ComicCorner.Models.ViewModels.UpdateComic
+
+@{
+   ViewBag.Title = "Update";
+}
+
+<h2>Update information about @Model.Comic.ComicName</h2>
+<form method="post" action="/Comic/Update/@Model.Comic.ComicId">
+    <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+    <div>Comic Name: <input type="text" name="ComicName" id="ComicName" value="@Model.Comic.ComicName" /></div>
+    <div>Comic Description: <textarea type="text" name="ComicDesc" id="ComicDesc">@Model.Comic.ComicDesc"</textarea></div>
+    
+    <!--Can not pass on multiple checkbox to run the multiple query because we do not know how many queries to run depends on users' choices-->
+    <!--Solution: Add one category at a time in dropdown list in Show view-->
+    <!--<div>
+        Category:
+        <!--@foreach (var category in Model.Category)
+        {
+            <input type="hidden" name="CategoryId" value="@category.CategoryId" />
+            <input type="checkbox" name="CategoryId" id="CategoryId" value="@category.CategoryId" />
+            <label for="CategoryId">@category.CategoryName</label>
+        }
+    </div>-->
+    <div>Publishing year: <input type="text" name="ComicYear" id="ComicYear" value="@Model.Comic.ComicYear"/></div>
+    <div>Price: <input type="text" name="ComicPrice" id="ComicPrice" value="@Model.Comic.ComicPrice"/></div>
+    <input type="submit" value="Update the comic" />
+</form>

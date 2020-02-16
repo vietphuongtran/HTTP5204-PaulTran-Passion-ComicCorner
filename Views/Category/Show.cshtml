@@ -1,0 +1,27 @@
+﻿@model ComicCorner.Models.ViewModels.ShowCategory
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>@Model.Category.CategoryName</h2>
+<div>@Model.Category.CategoryDesc</div>
+<a href="/Category/Update/@Model.Category.CategoryId">Update the category</a>
+<a href="/Category/DeleteConfirm/@Model.Category.CategoryId">Delete the category</a>
+<form method="GET" action="/Comic/List">
+    
+    <!--GET -->
+    <input type="text" id="ComicSearchKey" name="ComicSearchKey" />
+    <input type="submit" value="Search" />
+</form>
+@{
+    foreach (var comic in @Model.Comics)
+    {
+        <div>
+            <a href="/Comic/Show/@comic.ComicId">@comic.ComicName</a>
+        </div>
+        <div>@comic.ComicDesc</div>
+    }
+}
+<a href="/Category/List">Back to List</a>
+

@@ -1,0 +1,14 @@
+﻿@model ComicCorner.Models.Category
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update information about @Model.CategoryName</h2>
+<form method="post" action="/Category/Update/@Model.CategoryId">
+    <input type="hidden" name="CategoryId" id="ComicId" value="@Model.CategoryId" />
+    <div>Category Name: <input type="text" name="CategoryName" id="CateogryName" value="@Model.CategoryName" /></div>
+    <div>Description: <textarea type="text" name="CategoryDesc" id="CategoryDesc">@Model.CategoryDesc"</textarea></div>
+    <input type="submit" value="Update the category" />
+</form>
+

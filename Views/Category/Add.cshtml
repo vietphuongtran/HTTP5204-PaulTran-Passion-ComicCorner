@@ -1,0 +1,14 @@
+﻿@model ComicCorner.Models.Category
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add a category</h2>
+<form method="post" action="/Category/Add">
+    <div>Category Name: <input type="text" name="CategoryName" id="CategoryName" /></div>
+    <div>Description: <textarea type="text" name="CategoryDesc" id="CategoryDesc"></textarea></div>
+    <input type="submit" value="Add the category" />
+</form>
+<a href="/Category/List">Back to list</a>
+

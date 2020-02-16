@@ -1,0 +1,12 @@
+﻿@model ComicCorner.Models.Category
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete @Model.CategoryName</h2>
+<form method="Post" action="/Category/DeleteConfirm/@Model.CategoryId">
+    <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
+    <input type="submit" value="Yes" />
+    <a href="/Category/List">No, go back to list</a>
+</form>

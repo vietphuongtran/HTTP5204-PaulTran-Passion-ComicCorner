@@ -1,0 +1,184 @@
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.dll.config
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.pdb
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.exe
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.exe.config
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.rsp
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.exe
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.exe.config
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.rsp
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.AppContext.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Collections.Immutable.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Console.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Compression.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.FileSystem.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Pipes.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.AccessControl.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Claims.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.ValueTuple.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XPath.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.exe
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.exe.config
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.rsp
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\VBCSCompiler.exe
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\VBCSCompiler.exe.config
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Antlr3.Runtime.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.SqlServer.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.Web.Infrastructure.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Newtonsoft.Json.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Helpers.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Mvc.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Optimization.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Razor.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Deployment.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Razor.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\WebGrease.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.SqlServer.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Helpers.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Mvc.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Optimization.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Razor.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Deployment.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Razor.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Newtonsoft.Json.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Antlr3.Runtime.pdb
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csproj.CopyComplete
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.dll
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.pdb
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csproj.GenerateResource.cache
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial1.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial2.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.test.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addingforeignkey.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations._12Feb.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.databasechange.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csprojAssemblyReference.cache
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.deleteaddprice.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.columndeleted.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.testing2.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingdatatypeforcomicprice.resources
+E:\Web Development\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.datatypeforcomicpricetodecimal.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.dll.config
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\ComicCorner.pdb
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.exe
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.exe.config
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csc.rsp
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.exe
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.exe.config
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\csi.rsp
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.Managed.Core.targets
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.AppContext.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Collections.Immutable.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Console.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Compression.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.FileSystem.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.IO.Pipes.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Reflection.Metadata.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.AccessControl.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Claims.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Security.Principal.Windows.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.ValueTuple.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XmlDocument.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XPath.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.exe
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.exe.config
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\vbc.rsp
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\VBCSCompiler.exe
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\roslyn\VBCSCompiler.exe.config
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Antlr3.Runtime.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.SqlServer.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.Web.Infrastructure.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Newtonsoft.Json.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Helpers.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Mvc.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Optimization.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Razor.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Deployment.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Razor.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\WebGrease.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\EntityFramework.SqlServer.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Helpers.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Mvc.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Optimization.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.Razor.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Deployment.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\System.Web.WebPages.Razor.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Newtonsoft.Json.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Antlr3.Runtime.pdb
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csprojAssemblyReference.cache
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial1.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial2.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.test.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addingforeignkey.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations._12Feb.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.databasechange.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.deleteaddprice.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.columndeleted.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.testing2.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingdatatypeforcomicprice.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.datatypeforcomicpricetodecimal.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csproj.GenerateResource.cache
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csproj.CopyComplete
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.dll
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.pdb
