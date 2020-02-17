@@ -22,3 +22,48 @@ select,
 textarea {
     max-width: 280px;
 }
+textarea {
+    width: 500px;
+    height: 200px;
+}
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+.picture {
+    flex: 1 0 0;
+}
+.picture img {
+    width: 60%;
+    height: auto;
+    text-align:right;
+}
+.detail {
+    flex: 3 0 0;
+}
+.content {
+    margin: 1em 6em;
+}
+#ShowComicDetail {
+    flex: 2 0 0;
+    margin: 1em 2em
+}
+#ShowComicCategory {
+    flex: 1 0 0;
+}
+.update {
+    text-align:center;
+}
+.update div {
+    margin-bottom: 1em;
+}
+#ComicPic {
+    text-align: center;
+}
+.updateform div {
+    margin-bottom: 1em;
+}
+#categorypicture {
+    width: 90%;
+    height: auto;
+}

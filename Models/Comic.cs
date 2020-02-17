@@ -18,6 +18,12 @@ namespace ComicCorner.Models
         public int ComicYear { get; set; }
         //Currency: CAD   
         public decimal ComicPrice { get; set; }
+
+        //1: HasPic, 0: No pic
+        public int HasPic { get; set; }
+        //contain options like .jpg, .jpeg, .gif, .png
+        public string PicExtension { get; set; }
+
         //One comic belong to many categories and 1 category can have many comics
         public ICollection<Category> Categories { get; set; }
     }

@@ -9,19 +9,29 @@
     <input type="text" id="ComicSearchKey" name="ComicSearchKey" />
     <input type="submit" value="Search" />
 </form>
-<div class="flexbox">
-    <div class="picture"></div>
+
     <div class="content">
         @{
             foreach (var Comic in Model)
             {
-                <div><a href="/Comic/Show/@Comic.ComicId">@Comic.ComicName</a></div>
-                <div>Description: @Comic.ComicDesc</div>
+                <div class="flexbox">
+                    <div class="picture">
+                        @{
+                            if (Comic.HasPic == 1)
+                            {
+                                <img src="../../Content/Comics/@(Comic.ComicId).@(Comic.PicExtension)" alt="Image of @Comic.ComicName" />
+                            }
+                        }
+                    </div>
+                    <div class="detail">
+                        <div><a href="/Comic/Show/@Comic.ComicId">@Comic.ComicName</a></div>
+                        <div>Description: @Comic.ComicDesc</div>
+                    </div>                    
+                </div>
+                
             }
         }
     </div>
-    
-</div>
 
 <a href="/Comic/Add">Add a comic</a>
 

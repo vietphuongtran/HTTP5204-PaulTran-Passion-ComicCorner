@@ -182,6 +182,18 @@
     <Compile Include="Migrations\202002140147409_datatype for comic price to decimal.designer.cs">
       <DependentUpon>202002140147409_datatype for comic price to decimal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002162340354_add picture.cs" />
+    <Compile Include="Migrations\202002162340354_add picture.designer.cs">
+      <DependentUpon>202002162340354_add picture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002170215001_add pic to category.cs" />
+    <Compile Include="Migrations\202002170215001_add pic to category.designer.cs">
+      <DependentUpon>202002170215001_add pic to category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002170220542_change database table naem.cs" />
+    <Compile Include="Migrations\202002170220542_change database table naem.designer.cs">
+      <DependentUpon>202002170220542_change database table naem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\ViewModels\ShowCategory.cs" />
@@ -239,6 +251,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Categories\" />
+    <Folder Include="Content\Comics\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -289,6 +303,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002140147409_datatype for comic price to decimal.resx">
       <DependentUpon>202002140147409_datatype for comic price to decimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002162340354_add picture.resx">
+      <DependentUpon>202002162340354_add picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002170215001_add pic to category.resx">
+      <DependentUpon>202002170215001_add pic to category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002170220542_change database table naem.resx">
+      <DependentUpon>202002170220542_change database table naem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

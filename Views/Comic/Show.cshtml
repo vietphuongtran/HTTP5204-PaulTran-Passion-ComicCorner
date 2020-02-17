@@ -5,40 +5,61 @@
 }
 
 <h2>@Model.Comic.ComicName</h2>
-<div>Description: @Model.Comic.ComicDesc</div>
-<div>Publishing Year: @Model.Comic.ComicYear</div>
-<div>Comic Price: @Model.Comic.ComicPrice</div>
-<a href="/Comic/DeleteConfirm/@Model.Comic.ComicId">Delete the comic</a>
-<a href="/Comic/Update/@Model.Comic.ComicId">Update the comic</a>
-<div>Categories:</div>
-    <div>
-    @{
-        foreach (var category in @Model.Categories)
-        {
-
-            <a href="/Category/Show/@category.CategoryId">@category.CategoryName</a>
-            <form method="Post" action="/Comic/RemoveCategory/@Model.Comic.ComicId">
-                <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
-                <input type="hidden" name="CategoryId" id="CategoryId" value="@category.CategoryId" />
-                <input type="submit" value="Remove" />
-            </form>
-        }
-    }    
-    </div >
-    <form method="POST" action="/Comic/AddCategory/@Model.Comic.ComicId">
-        <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
-        <select id="CategoryId" name="CategoryId">
+<div class="flexbox">
+    <div id="ShowComicDetail">
+        <div class="flexbox">
+            <div class="picture">
+                @{
+                    if (Model.Comic.HasPic == 1)
+                    {
+                        <img src="../../Content/Comics/@(Model.Comic.ComicId).jpg" alt="Image of @Model.Comic.ComicName" />
+                    }
+                }
+            </div>
+            <div class="detail">
+                <div>Description: @Model.Comic.ComicDesc</div>
+                <div>Publishing Year: @Model.Comic.ComicYear</div>
+                <div>Comic Price: @Model.Comic.ComicPrice</div>
+                <a href="/Comic/DeleteConfirm/@Model.Comic.ComicId">Delete the comic</a>
+                <a href="/Comic/Update/@Model.Comic.ComicId">Update the comic</a>
+            </div>            
+        </div>
+        
+    </div>
+    <div id="ShowComicCategory">
+        <div>Categories:</div>
+        <div>
             @{
-
-                foreach (var category in @Model.ddl_Categories)
+                foreach (var category in @Model.Categories)
                 {
-                    <option value="@category.CategoryId">@category.CategoryName</option>
-                    //TO do: Remove Category
+                   
+                    <a href="/Category/Show/@category.CategoryId">@category.CategoryName</a>
+                    <form method="Post" action="/Comic/RemoveCategory/@Model.Comic.ComicId">
+                        <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+                        <input type="hidden" name="CategoryId" id="CategoryId" value="@category.CategoryId" />
+                        <input type="submit" value="Remove" />
+                    </form>
                 }
             }
-        </select>
-        <input type="submit" value="Add a category" />
-    </form>
+        </div>
+        <form method="POST" action="/Comic/AddCategory/@Model.Comic.ComicId">
+            <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+            <select id="CategoryId" name="CategoryId">
+                @{
+
+                    foreach (var category in @Model.ddl_Categories)
+                    {
+                        <option value="@category.CategoryId">@category.CategoryName</option>
+                        //TO do: Remove Category
+                    }
+                }
+            </select>
+            <input type="submit" value="Add a category" />
+        </form>
+    </div>
+</div>
+
+
     <a href="/Comic/List">Back to list</a>
 
 

@@ -11,6 +11,7 @@ using ComicCorner.Data;
 using ComicCorner.Models;
 using System.Diagnostics;
 using ComicCorner.Models.ViewModels;
+using System.IO;
 
 namespace ComicCorner.Controllers
 {
@@ -133,19 +134,61 @@ namespace ComicCorner.Controllers
         }
         //This is to actually update the comic
         [HttpPost]
-        public ActionResult Update(int ComicId, string ComicName, string ComicDesc, int ComicYear, decimal ComicPrice)
+        public ActionResult Update(int ComicId, string ComicName, string ComicDesc, int ComicYear, decimal ComicPrice, HttpPostedFileBase ComicPic)
         {
+            //This code is borrowed from Christine Bittle used for academic purpose
+            int HasPic = 0;
+            string comicpicextension = "";
+            
+            if (ComicPic != null)
+            {
+                Debug.WriteLine("Something identified...");
+                
+                if (ComicPic.ContentLength > 0)
+                {
+                    Debug.WriteLine("Successfully Identified Image");
+                    
+                    var valtypes = new[] { "jpeg", "jpg", "png", "gif" };
+                    var extension = Path.GetExtension(ComicPic.FileName).Substring(1);
+
+                    if (valtypes.Contains(extension))
+                    {
+                        try
+                        {
+                            //file name is the id of the image
+                            string fn = ComicId + "." + extension;
+
+                            //get a direct file path to ~/Content/Comics/{id}.{extension}
+                            string path = Path.Combine(Server.MapPath("~/Content/Comics/"), fn);
+
+                            //save the file
+                            ComicPic.SaveAs(path);
+                            //if these are all successful then we can set these fields
+                            HasPic = 1;
+                            comicpicextension = extension;
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine("Comic Image was not saved successfully.");
+                            Debug.WriteLine("Exception:" + ex);
+                        }
+                    }
+                }
+            }
             //Write the query
             Debug.WriteLine("I am trying to update " + ComicId);
-            string UpdateQuery = "Update comics set ComicName = @ComicName, ComicDesc = @ComicDesc, ComicYear = @ComicYear, ComicPrice = @ComicPrice where ComicId = @ComicId";
+            string UpdateQuery = "Update comics set ComicName = @ComicName, ComicDesc = @ComicDesc, ComicYear = @ComicYear, ComicPrice = @ComicPrice, HasPic=@HasPic, PicExtension=@comicpicextension where ComicId = @ComicId";
             Debug.WriteLine("I am trying to update " + ComicId);
             //Parameterized the query
-            SqlParameter[] sqlparams = new SqlParameter[5];
+            SqlParameter[] sqlparams = new SqlParameter[7];
             sqlparams[0] = new SqlParameter("@ComicName", ComicName);
             sqlparams[1] = new SqlParameter("@ComicDesc", ComicDesc);
             sqlparams[2] = new SqlParameter("@ComicYear", ComicYear);
             sqlparams[3] = new SqlParameter("@ComicPrice", ComicPrice);
             sqlparams[4] = new SqlParameter("@ComicId", ComicId);
+            sqlparams[5] = new SqlParameter("@HasPic", HasPic);
+            sqlparams[6] = new SqlParameter("@comicpicextension", comicpicextension);
             //Execute Query
             db.Database.ExecuteSqlCommand(UpdateQuery, sqlparams);
 

@@ -182,3 +182,6 @@ E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debu
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csproj.CopyComplete
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.dll
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.pdb
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addpicture.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addpictocategory.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changedatabasetablenaem.resources

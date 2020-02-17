@@ -5,9 +5,23 @@
 }
 
 <h2>@Model.Category.CategoryName</h2>
-<div>@Model.Category.CategoryDesc</div>
-<a href="/Category/Update/@Model.Category.CategoryId">Update the category</a>
-<a href="/Category/DeleteConfirm/@Model.Category.CategoryId">Delete the category</a>
+<div class="flexbox">
+    <div class="picture">
+        @{
+            if (Model.Category.HasPic == 1)
+            {
+                <img id="categorypicture" src="../../Content/Categories/@(Model.Category.CategoryId).@(Model.Category.PicExtension)" alt="Image of @Model.Category.CategoryName" />
+            }
+        }
+    </div>
+    <div class="detail">
+        <div>@Model.Category.CategoryDesc</div>
+        <a href="/Category/Update/@Model.Category.CategoryId">Update the category</a>
+        <a href="/Category/DeleteConfirm/@Model.Category.CategoryId">Delete the category</a>
+    </div>
+
+</div>
+
 <form method="GET" action="/Comic/List">
     
     <!--GET -->

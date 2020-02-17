@@ -5,10 +5,25 @@
 }
 
 <h2>Update information about @Model.CategoryName</h2>
-<form method="post" action="/Category/Update/@Model.CategoryId">
-    <input type="hidden" name="CategoryId" id="ComicId" value="@Model.CategoryId" />
-    <div>Category Name: <input type="text" name="CategoryName" id="CateogryName" value="@Model.CategoryName" /></div>
-    <div>Description: <textarea type="text" name="CategoryDesc" id="CategoryDesc">@Model.CategoryDesc"</textarea></div>
-    <input type="submit" value="Update the category" />
-</form>
+<div class="flexbox">
+    <div class="picture">
+        @{
+            if (Model.HasPic == 1)
+            {
+                <img src="../../Content/Categories/@(Model.CategoryId).jpg" alt="Image of @Model.CategoryName" />
+            }
+        }
+    </div>
+    <div class="content">
+        <form class="updateform" method="post" action="/Category/Update/@Model.CategoryId" enctype="multipart/form-data">
+            <input type="hidden" name="CategoryId" id="ComicId" value="@Model.CategoryId" />
+            <div>Category Name: <input type="text" name="CategoryName" id="CateogryName" value="@Model.CategoryName" /></div>
+            <div>Description: <textarea type="text" name="CategoryDesc" id="CategoryDesc">@Model.CategoryDesc"</textarea></div>
+            <div class="imageupload"><span>Image: </span> <input type="file" name="CategoryPic" id="CategoryPic" /></div>
+            <input type="submit" value="Update the category" />
+        </form>
+    </div>
+
+</div>
+   
 

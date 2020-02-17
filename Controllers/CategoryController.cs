@@ -11,6 +11,7 @@ using ComicCorner.Data;
 using ComicCorner.Models;
 using System.Diagnostics;
 using ComicCorner.Models.ViewModels;
+using System.IO;
 
 
 namespace ComicCorner.Controllers
@@ -104,16 +105,58 @@ namespace ComicCorner.Controllers
             return View(selectedcategory);
         }
         [HttpPost]
-        public ActionResult Update(string CategoryName, string CategoryDesc, int CategoryId)
+        public ActionResult Update(string CategoryName, string CategoryDesc, int CategoryId, HttpPostedFileBase CategoryPic)
         {
+            //This code is borrowed from Christine Bittle used for academic purpose
+            int HasPic = 0;
+            string categorypicextension = "";
+
+            if (CategoryPic != null)
+            {
+                Debug.WriteLine("Something identified...");
+
+                if (CategoryPic.ContentLength > 0)
+                {
+                    Debug.WriteLine("Successfully Identified Image");
+
+                    var valtypes = new[] { "jpeg", "jpg", "png", "gif" };
+                    var extension = Path.GetExtension(CategoryPic.FileName).Substring(1);
+
+                    if (valtypes.Contains(extension))
+                    {
+                        try
+                        {
+                            //file name is the id of the image
+                            string fn = CategoryId + "." + extension;
+
+                            //get a direct file path to ~/Content/Categories/{id}.{extension}
+                            string path = Path.Combine(Server.MapPath("~/Content/Categories/"), fn);
+
+                            //save the file
+                            CategoryPic.SaveAs(path);
+                            //if these are all successful then we can set these fields
+                            HasPic = 1;
+                            categorypicextension = extension;
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine("Comic Image was not saved successfully.");
+                            Debug.WriteLine("Exception:" + ex);
+                        }
+                    }
+                }
+            }
             //Write the query
-            string query = "Update categories set CategoryName = @CategoryName, CategoryDesc = @CategoryDesc where CategoryId = @CategoryId";
+            string query = "Update categories set CategoryName = @CategoryName, CategoryDesc = @CategoryDesc, HasPic=@HasPic, PicExtension=@categorypicextension where CategoryId = @CategoryId";
             Debug.WriteLine("I am trying to update" + CategoryName);
             //Parameterized query
-            SqlParameter[] sqlparams = new SqlParameter[3];
+            SqlParameter[] sqlparams = new SqlParameter[5];
             sqlparams[0] = new SqlParameter("@CategoryName", CategoryName);
             sqlparams[1] = new SqlParameter("@CategoryDesc", CategoryDesc);
             sqlparams[2] = new SqlParameter("@CategoryId", CategoryId);
+            sqlparams[3] = new SqlParameter("@HasPic", HasPic);
+            sqlparams[4] = new SqlParameter("@categorypicextension", categorypicextension);
             //Execute Query
             db.Database.ExecuteSqlCommand(query, sqlparams);
             //return to the List
