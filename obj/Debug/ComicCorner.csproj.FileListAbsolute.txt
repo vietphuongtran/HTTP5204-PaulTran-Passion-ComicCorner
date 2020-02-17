@@ -185,3 +185,6 @@ E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debu
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addpicture.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addpictocategory.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changedatabasetablenaem.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.addingreviewstableanditsforeignkey.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations._12345.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.testing.resources

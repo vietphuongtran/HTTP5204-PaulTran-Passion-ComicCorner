@@ -26,5 +26,11 @@ namespace ComicCorner.Models
 
         //One comic belong to many categories and 1 category can have many comics
         public ICollection<Category> Categories { get; set; }
+
+        //One to Many
+        //One review belong to one comic 
+        //But one comic can have many review
+
+        public ICollection<Review> Reviews { get; set; }
     }
 }

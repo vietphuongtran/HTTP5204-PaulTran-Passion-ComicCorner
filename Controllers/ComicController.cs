@@ -52,18 +52,25 @@ namespace ComicCorner.Controllers
                 return HttpNotFound();
             }
             //display the categories belong to a comic
-            string query1 = "select * from Categories inner join ComicCategories on Categories.CategoryId = ComicCategories.Category_CategoryId where Comic_ComicId = @id";
+            string ShowAllCategory = "select * from Categories inner join ComicCategories on Categories.CategoryId = ComicCategories.Category_CategoryId where Comic_ComicId = @id";
             SqlParameter param = new SqlParameter("@id", id);
-            List<Category> CurrentCategories = db.Categories.SqlQuery(query1, param).ToList();
+            List<Category> CurrentCategories = db.Categories.SqlQuery(ShowAllCategory, param).ToList();
 
             //display the dropdownlist to choose a comic
-            string query2 = "select * from Categories";
-            List<Category>AddedCategories = db.Categories.SqlQuery(query2).ToList();
+            string ShowDdlCategory = "select * from Categories";
+            List<Category>AddedCategories = db.Categories.SqlQuery(ShowDdlCategory).ToList();
+
+            //display all comment belong to a comic
+            string ShowAllReviews = "select * from Reviews where ComicId=@id";
+            SqlParameter param2 = new SqlParameter("@id", id);
+            List<Review> AllReviews = db.Reviews.SqlQuery(ShowAllReviews, param2).ToList();
+            Debug.WriteLine("I am trying to list all the reviews");
 
             ShowComic viewmodel = new ShowComic();
             viewmodel.Comic = comic;//display the chosen comics
             viewmodel.Categories = CurrentCategories; //display the category a comic belong to
             viewmodel.ddl_Categories = AddedCategories; //display the dropdown list to add the comics
+            viewmodel.Reviews = AllReviews;
 
             return View(viewmodel);
         }

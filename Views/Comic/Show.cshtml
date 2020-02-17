@@ -22,6 +22,13 @@
                 <div>Comic Price: @Model.Comic.ComicPrice</div>
                 <a href="/Comic/DeleteConfirm/@Model.Comic.ComicId">Delete the comic</a>
                 <a href="/Comic/Update/@Model.Comic.ComicId">Update the comic</a>
+                <div>Reviews: </div>
+                @{
+                    foreach (var review in Model.Reviews)
+                    {
+                        <div>@review.ReviewContent</div>
+                    }
+                }
             </div>            
         </div>
         
