@@ -4,7 +4,7 @@
 }
 
 <h2>List of Categories</h2>
-<form method="GET" action="/Comic/List">
+<form method="GET" action="/Category/List">
     <!--GET -->
     <input type="text" id="CategorySearchKey" name="CategorySearchKey" />
     <input type="submit" value="Search" />
@@ -28,6 +28,7 @@
                     <div class="detail">
                         <div><a href="/Category/Show/@Category.CategoryId">@Category.CategoryName</a></div>
                         <div>@Category.CategoryDesc</div>
+                        <div><a href="/Category/Update/@Category.CategoryId">Update the category</a></div>
                     </div>
                 </div>
                 

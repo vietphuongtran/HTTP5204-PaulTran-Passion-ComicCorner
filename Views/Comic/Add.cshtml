@@ -4,7 +4,7 @@
 }
 
 <h2>Add a comic</h2>
-<form method="post" action="/Comic/Add">
+<form class="add" method="post" action="/Comic/Add">
     <div>Comic Name: <input type="text" name="ComicName" id="ComicName" /></div>
     <div>Comic Description: <textarea type="text" name="ComicDesc" id="ComicDesc"></textarea></div>
     <!--It is better to add the cateogry of the comic in the update as here we don't have the ID of the comic to add in the bridging table-->
@@ -12,7 +12,8 @@
         Category:
     </div>-->
     <div>Publishing year: <input type="text" name="ComicYear" id="ComicYear" /></div>
-    <div>Price: <input type="text" name="ComicPrice" id="ComicPrice" /></div>
+    <div>Price: <input type="text" name="ComicPrice" id="ComicPrice" /></div>    
+    <input type="hidden" name="HasPic" value="1" />
     <input type="submit" value="Add a comic" />
 </form>
 <a href="/Comic/List">Back to list</a>

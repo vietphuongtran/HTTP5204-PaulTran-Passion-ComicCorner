@@ -74,6 +74,31 @@ namespace ComicCorner.Controllers
 
             return View(viewmodel);
         }
+        //Add the review into a post
+        [HttpPost]
+        public ActionResult AddReview(int ComicId, string ReviewContent)
+        {
+            string query = "Insert into reviews (ReviewContent, ComicId) values (@ReviewContent, @ComicId)";
+            Debug.WriteLine("I am trying to add a review with the content " + ReviewContent + " into the Comic " + ComicId );
+            SqlParameter[] sqlparams = new SqlParameter[2];
+            sqlparams[0] = new SqlParameter("@ComicId", ComicId);
+            sqlparams[1] = new SqlParameter("@ReviewContent", ReviewContent);
+            //Execute
+            db.Database.ExecuteSqlCommand(query, sqlparams);
+            return RedirectToAction("Show/" + ComicId);
+        }
+        [HttpPost]
+        public ActionResult RemoveReview(int ReviewId, int ComicId)
+        {
+            string query = "Delete from reviews where ReviewId = @ReviewId";
+            Debug.WriteLine("I am trying to delete review " + ReviewId);
+            SqlParameter[] sqlparams = new SqlParameter[1];
+            sqlparams[0] = new SqlParameter("@ReviewId", ReviewId);
+            
+            //Execute
+            db.Database.ExecuteSqlCommand(query, sqlparams);
+            return RedirectToAction("Show/" + ComicId);
+        }
         [HttpPost]
         public ActionResult RemoveCategory(int CategoryId, int ComicId)
         {
@@ -106,17 +131,19 @@ namespace ComicCorner.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(string ComicName, string ComicDesc, int ComicYear, int ComicPrice)
+        public ActionResult Add(string ComicName, string ComicDesc, int ComicYear, int ComicPrice, int HasPic)
         {
             //Write the query
-            string query = "Insert into comics (ComicName, ComicDesc, ComicYear, ComicPrice) values (@ComicName, @ComicDesc, @ComicYear, @ComicPrice)";
+            string query = "Insert into comics (ComicName, ComicDesc, ComicYear, ComicPrice, HasPic) values (@ComicName, @ComicDesc, @ComicYear, @ComicPrice, @HasPic)";
             Debug.WriteLine("I am trying to add" + ComicName);
             //Parameterized query
-            SqlParameter[] sqlparams = new SqlParameter[4];
+            SqlParameter[] sqlparams = new SqlParameter[5];
             sqlparams[0] = new SqlParameter("@ComicName", ComicName);
             sqlparams[1] = new SqlParameter("@ComicDesc", ComicDesc);
             sqlparams[2] = new SqlParameter("@ComicYear", ComicYear);
             sqlparams[3] = new SqlParameter("@ComicPrice", ComicPrice);
+            sqlparams[4] = new SqlParameter("@HasPic", HasPic);
+
             //Execute Query
             db.Database.ExecuteSqlCommand(query, sqlparams);
             //return to the List
@@ -236,6 +263,12 @@ namespace ComicCorner.Controllers
             SqlParameter[] sqlparams2 = new SqlParameter[1];
             sqlparams2[0] = new SqlParameter("@ComicId", ComicId);
             db.Database.ExecuteSqlCommand(DeleteFromTable, sqlparams2);
+
+            //Delete all the reviews related to that comics
+            string DeleteComment = "Delete from Reviews where ComicId = @ComicId";
+            SqlParameter[] sqlparams3 = new SqlParameter[1];
+            sqlparams2[0] = new SqlParameter("@ComicId", ComicId);
+            db.Database.ExecuteSqlCommand(DeleteComment, sqlparams3);
 
             return RedirectToAction("List");
         }

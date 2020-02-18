@@ -51,19 +51,31 @@ textarea {
 #ShowComicCategory {
     flex: 1 0 0;
 }
-.update {
+.update, .add {
     text-align:center;
-}
-.update div {
-    margin-bottom: 1em;
 }
 #ComicPic {
     text-align: center;
 }
 .updateform div {
     margin-bottom: 1em;
+    text-align: left;
 }
 #categorypicture {
     width: 90%;
     height: auto;
+}
+h2 {
+    text-align:center;
+}
+.review {
+    margin: 1em;
+}
+#searchbox {
+    margin: 1em;
+}
+#ReviewContent {
+    width: 800px;
+    height: 100px;
+    margin: 1em;
 }

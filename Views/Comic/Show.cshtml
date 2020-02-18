@@ -12,7 +12,7 @@
                 @{
                     if (Model.Comic.HasPic == 1)
                     {
-                        <img src="../../Content/Comics/@(Model.Comic.ComicId).jpg" alt="Image of @Model.Comic.ComicName" />
+                        <img src="../../Content/Comics/@(Model.Comic.ComicId).@(Model.Comic.PicExtension)" alt="Image of @Model.Comic.ComicName" />
                     }
                 }
             </div>
@@ -26,9 +26,23 @@
                 @{
                     foreach (var review in Model.Reviews)
                     {
-                        <div>@review.ReviewContent</div>
+                        <div class="review">@review.ReviewContent</div>
+                        <form method="Post" action="/Comic/RemoveReview/@Model.Comic.ComicId">
+                            <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+                            <div><input type="hidden" name="ReviewId" id="ReviewId" value="@review.ReviewId" />
+                            <input type="submit" value="Remove" /></div>
+                        </form>
+
                     }
+
                 }
+                <!--Adding review to a comic-->
+                <form  method="Post" action="/Comic/AddReview/@Model.Comic.ComicId">
+                    <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+                    <textarea name="ReviewContent" id="ReviewContent"></textarea>
+                    <div><input type="submit" value="Add a review" /></div>
+                </form>
+                <!--Todo: Adding users-->
             </div>            
         </div>
         
@@ -37,10 +51,13 @@
         <div>Categories:</div>
         <div>
             @{
+                
                 foreach (var category in @Model.Categories)
                 {
                    
+                
                     <a href="/Category/Show/@category.CategoryId">@category.CategoryName</a>
+                    //Remove the category
                     <form method="Post" action="/Comic/RemoveCategory/@Model.Comic.ComicId">
                         <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
                         <input type="hidden" name="CategoryId" id="CategoryId" value="@category.CategoryId" />
@@ -52,22 +69,21 @@
         <form method="POST" action="/Comic/AddCategory/@Model.Comic.ComicId">
             <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
             <select id="CategoryId" name="CategoryId">
-                @{
+            @{
 
                     foreach (var category in @Model.ddl_Categories)
                     {
                         <option value="@category.CategoryId">@category.CategoryName</option>
-                        //TO do: Remove Category
                     }
-                }
+            }
             </select>
             <input type="submit" value="Add a category" />
+            <div>Can't find the category? <a href="/Category/Add">Add a new category here</a></div>
         </form>
     </div>
 </div>
+<a href="/Comic/List">Back to list</a>
 
-
-    <a href="/Comic/List">Back to list</a>
 
 
 

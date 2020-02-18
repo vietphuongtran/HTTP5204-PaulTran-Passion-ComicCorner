@@ -22,5 +22,6 @@ namespace ComicCorner.Controllers
         {
             return View();
         }
+  
     }
 }
