@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ComicController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Data\ComicCornerContext.cs" />
@@ -207,8 +208,25 @@
     <Compile Include="Migrations\202002171401295_testing.designer.cs">
       <DependentUpon>202002171401295_testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002191449307_adding customers.cs" />
+    <Compile Include="Migrations\202002191449307_adding customers.designer.cs">
+      <DependentUpon>202002191449307_adding customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002191459290_remove ComicPrice from Customers.cs" />
+    <Compile Include="Migrations\202002191459290_remove ComicPrice from Customers.designer.cs">
+      <DependentUpon>202002191459290_remove ComicPrice from Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002191506462_changing data type of customeradd.cs" />
+    <Compile Include="Migrations\202002191506462_changing data type of customeradd.designer.cs">
+      <DependentUpon>202002191506462_changing data type of customeradd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002192143252_remove foreign key.cs" />
+    <Compile Include="Migrations\202002192143252_remove foreign key.designer.cs">
+      <DependentUpon>202002192143252_remove foreign key.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\ViewModels\ShowCategory.cs" />
     <Compile Include="Models\ViewModels\ShowComic.cs" />
@@ -262,6 +280,10 @@
     <Content Include="Views\Category\Add.cshtml" />
     <Content Include="Views\Category\Update.cshtml" />
     <Content Include="Views\Category\DeleteConfirm.cshtml" />
+    <Content Include="Views\Customer\List.cshtml" />
+    <Content Include="Views\Customer\Update.cshtml" />
+    <Content Include="Views\Customer\Show.cshtml" />
+    <Content Include="Views\Customer\DeleteConfirm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -336,6 +358,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002171401295_testing.resx">
       <DependentUpon>202002171401295_testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191449307_adding customers.resx">
+      <DependentUpon>202002191449307_adding customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191459290_remove ComicPrice from Customers.resx">
+      <DependentUpon>202002191459290_remove ComicPrice from Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191506462_changing data type of customeradd.resx">
+      <DependentUpon>202002191506462_changing data type of customeradd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002192143252_remove foreign key.resx">
+      <DependentUpon>202002192143252_remove foreign key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

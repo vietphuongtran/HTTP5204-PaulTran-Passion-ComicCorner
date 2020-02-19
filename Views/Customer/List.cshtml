@@ -1,0 +1,41 @@
+﻿@model List<ComicCorner.Models.Customer>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Customer</h2>
+<form method="GET" action="/Customer/List">
+    <!--GET -->
+    <input type="text" id="CustomerSearchKey" name="CustomerSearchKey" />
+    <input type="submit" value="Search" />
+</form>
+<div class="flexbox">
+
+
+    <div class="content">
+        @{
+            foreach (var customer in Model)
+            {
+                <div class="flexbox">
+                    <div class="picture">
+                        @{
+                            if (customer.HasPic == 1)
+                            {
+                                <img id="customerpicture" src="../../Content/Customers/@(customer.CustomerId).@(customer.PicExtension)" alt="Image of @customer.CustomerName" />
+                            }
+                        }
+                    </div>
+                    <div class="detail">
+                        <div><a href="/Customer/Show/@customer.CustomerId">@customer.CustomerName</a></div>
+                        <div>Address: @customer.CustomerAddress</div>
+                        <div>Email: @customer.CustomerEmail</div>
+                        <div><a href="/Customer/Update/@customer.CustomerId">Update customer</a></div>
+                    </div>
+                </div>
+
+            }
+        }
+    </div>
+</div>
+
+<a href="/Category/Add">Add a customer</a>

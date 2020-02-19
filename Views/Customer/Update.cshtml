@@ -1,0 +1,29 @@
+﻿@model ComicCorner.Models.Customer
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update information about @Model.CustomerName</h2>
+<div class="flexbox">
+    <div class="picture">
+        @{
+            if (Model.HasPic == 1)
+            {
+                <img src="../../Content/Customers/@(Model.CustomerId).@(Model.PicExtension)" alt="Image of @Model.CustomerName" />
+            }
+        }
+    </div>
+    <div class="content">
+        <form class="updateform" method="post" action="/Customer/Update/@Model.CustomerId" enctype="multipart/form-data">
+            <input type="hidden" name="CustomerId" id="CustomerId" value="@Model.CustomerId" />
+            <div>Customer Name: <input type="text" name="CustomerName" id="CustomerName" value="@Model.CustomerName" /></div>
+            <div>Customer Address: <input type="text" name="CustomerAddress" id="CustomerAddress" value="@Model.CustomerAddress" /></div>
+            <div>Customer Email: <input type="text" name="CustomerEmail" id="CustomerEmail" value="@Model.CustomerEmail" /></div>
+            <div class="imageupload"><span>Image: </span> <input type="file" name="CustomerPic" id="CustomerPic" /></div>
+            <input type="submit" value="Update the customer" />
+        </form>
+    </div>
+
+</div>
+

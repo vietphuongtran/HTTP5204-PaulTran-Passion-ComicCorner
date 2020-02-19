@@ -141,7 +141,7 @@ namespace ComicCorner.Controllers
                         }
                         catch (Exception ex)
                         {
-                            Debug.WriteLine("Comic Image was not saved successfully.");
+                            Debug.WriteLine("Category Image was not saved successfully.");
                             Debug.WriteLine("Exception:" + ex);
                         }
                     }
@@ -183,11 +183,6 @@ namespace ComicCorner.Controllers
             SqlParameter[] sqlparams2 = new SqlParameter[1];
             sqlparams2[0] = new SqlParameter("@CategoryId", CategoryId);
             db.Database.ExecuteSqlCommand(DeleteFromTable, sqlparams2);
-            //Argument: Should we delete all the comics belong to one category when we delete a category?
-            //Answer: 
-            //1) Too risky, maybe the owner just want to move the comics to a different categories so delete it permanently
-            //from the system will not be useful
-            //2) What if someone delete the whole genre by mistakes? Will all the comics be gone with it?
             
             return RedirectToAction("List");
         }

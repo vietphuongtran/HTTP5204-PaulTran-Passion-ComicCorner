@@ -10,7 +10,7 @@
             @{
                 if (Model.Comic.HasPic == 1)
                 {
-                    <img src="../../Content/Comics/@(Model.Comic.ComicId).jpg" alt="Image of @Model.Comic.ComicName" />
+                    <img src="../../Content/Comics/@(Model.Comic.ComicId).@(Model.Comic.PicExtension)" alt="Image of @Model.Comic.ComicName" />
                 }
             }
         </div>
@@ -34,7 +34,7 @@
         </div>-->
                 <div>Publishing year: <input type="text" name="ComicYear" id="ComicYear" value="@Model.Comic.ComicYear" /></div>
                 <div>Price: <input type="text" name="ComicPrice" id="ComicPrice" value="@Model.Comic.ComicPrice" /></div>
-                <div class="imageupload"><span>Image: </span> <input type="file" name="ComicPic" id="ComicPic" /></div>
+                <div class="imageupload"><span>Image: </span> <input type="file" name="ComicPic" id="ComicPic" value="@(Model.Comic.ComicId).@(Model.Comic.PicExtension)"/></div>
                 <input type="submit" value="Update the comic" />
             </form>
         </div>

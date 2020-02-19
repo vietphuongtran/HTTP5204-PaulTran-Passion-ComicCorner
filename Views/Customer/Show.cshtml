@@ -1,0 +1,28 @@
+﻿@model ComicCorner.Models.Customer
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Detail information about @Model.CustomerName</h2>
+<div class="flexbox">
+    <div class="picture">
+        @{
+            if (Model.HasPic == 1)
+            {
+                <img id="customerpicture" src="../../Content/Customers/@(Model.CustomerId).@(Model.PicExtension)" alt="Image of @Model.CustomerName" />
+            }
+        }
+    </div>
+    <div class="detail">
+        <div>Name: @Model.CustomerName</div>
+        <div>Address: @Model.CustomerAddress</div>
+        <div>Email: @Model.CustomerEmail</div>
+        <a href="/Customer/DeleteConfirm/@Model.CustomerId">Delete the customer</a>
+        <a href="/Customer/Update/@Model.CustomerId">Update the customer</a>
+    </div>
+</div>
+
+
+<!--To do: Add comments made-->
+

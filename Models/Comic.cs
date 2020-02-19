@@ -17,7 +17,7 @@ namespace ComicCorner.Models
         //This will only include the public year of the comic so I use int rather than DateTime
         public int ComicYear { get; set; }
         //Currency: CAD   
-        public decimal ComicPrice { get; set; }
+        public double ComicPrice { get; set; }
 
         //1: HasPic, 0: No pic
         public int HasPic { get; set; }

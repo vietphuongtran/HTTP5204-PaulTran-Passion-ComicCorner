@@ -16,6 +16,7 @@ namespace ComicCorner.Data
 
         public System.Data.Entity.DbSet<ComicCorner.Models.Category> Categories { get; set; }
         public System.Data.Entity.DbSet<ComicCorner.Models.Review> Reviews { get; set; }
+        public System.Data.Entity.DbSet<ComicCorner.Models.Customer> Customers { get; set; }
 
     }
 }

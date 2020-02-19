@@ -16,9 +16,16 @@ namespace ComicCorner.Models
 
         //One to Many
         //One review belong to one comic 
-        //But one comic can have many review
+        //But one comic can have many reviews
         public int ComicId { get; set; }
         [ForeignKey("ComicId")]
         public virtual Comic Comic { get; set; }
+
+        //One to Many
+        //One review belong to one customer 
+        //But one customer can have many reviews
+       //public int CustomerId { get; set; }
+       //[ForeignKey("CustomerId")]
+       //public virtual Customer Customer { get; set; }
     }
 }
