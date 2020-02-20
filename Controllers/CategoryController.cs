@@ -160,7 +160,7 @@ namespace ComicCorner.Controllers
             //Execute Query
             db.Database.ExecuteSqlCommand(query, sqlparams);
             //return to the List
-            return RedirectToAction("List");
+            return RedirectToAction("Show/" + CategoryId);
         }
         //Show the Delete Confirm
         public ActionResult DeleteConfirm(int id)
