@@ -232,6 +232,10 @@
     <Compile Include="Migrations\202002192214504_changing relationship successfully.designer.cs">
       <DependentUpon>202002192214504_changing relationship successfully.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002201411233_changing price to float.cs" />
+    <Compile Include="Migrations\202002201411233_changing price to float.designer.cs">
+      <DependentUpon>202002201411233_changing price to float.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -386,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002192214504_changing relationship successfully.resx">
       <DependentUpon>202002192214504_changing relationship successfully.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201411233_changing price to float.resx">
+      <DependentUpon>202002201411233_changing price to float.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

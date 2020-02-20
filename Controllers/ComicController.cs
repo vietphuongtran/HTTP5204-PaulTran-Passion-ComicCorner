@@ -273,17 +273,19 @@ namespace ComicCorner.Controllers
             sqlparams[0] = new SqlParameter("@ComicId", ComicId);
             db.Database.ExecuteSqlCommand(DeleteFromBridge, sqlparams);
 
+            //Delete all the reviews related to that comics
+            string DeleteComment = "Delete from Reviews where ComicId = @ComicId";
+            SqlParameter[] sqlparams3 = new SqlParameter[1];
+            sqlparams3[0] = new SqlParameter("@ComicId", ComicId);
+            db.Database.ExecuteSqlCommand(DeleteComment, sqlparams3);
+
             //Delete the comic from Comics Table
             string DeleteFromTable = "Delete from Comics where ComicId = @ComicId";
             SqlParameter[] sqlparams2 = new SqlParameter[1];
             sqlparams2[0] = new SqlParameter("@ComicId", ComicId);
             db.Database.ExecuteSqlCommand(DeleteFromTable, sqlparams2);
 
-            //Delete all the reviews related to that comics
-            string DeleteComment = "Delete from Reviews where ComicId = @ComicId";
-            SqlParameter[] sqlparams3 = new SqlParameter[1];
-            sqlparams2[0] = new SqlParameter("@ComicId", ComicId);
-            db.Database.ExecuteSqlCommand(DeleteComment, sqlparams3);
+            
 
             return RedirectToAction("List");
         }
