@@ -9,8 +9,10 @@ namespace ComicCorner.Models.ViewModels
     {
         //what do we need:
         //showing one customer
-        //public virtual Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
         //Showing all the reviews that customer made
-        //public List<Review> Reviews { get; set; }
+        public List<Review> Reviews { get; set; }
+        //Showing the comic which the comment is made
+        public List<Comic> Comics { get; set; }
     }
 }

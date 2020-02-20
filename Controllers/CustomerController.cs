@@ -55,7 +55,20 @@ namespace ComicCorner.Controllers
             {
                 return HttpNotFound();
             }
-            return View(customer);
+            string ShowAllReviews = "select * from Reviews where CustomerId = @id";
+            SqlParameter param = new SqlParameter("@id", id);
+            List<Review> RecentReviews = db.Reviews.SqlQuery(ShowAllReviews, param).ToList();
+
+            string ShowReviewedComics = "select * from comics inner join reviews on comics.comicid = reviews.comicid where CustomerId = @id";
+            SqlParameter param2 = new SqlParameter("@id", id);
+            List<Comic> ReviewedComics = db.Comics.SqlQuery(ShowReviewedComics, param2).ToList();
+
+            ShowCustomer viewmodel = new ShowCustomer();
+            viewmodel.Customer = customer;//display the chosen customer
+            viewmodel.Reviews = RecentReviews; //display the reviews customer made
+            viewmodel.Comics = ReviewedComics;
+
+            return View(viewmodel);
             //To do: Display reviews customer made
         }
         public ActionResult Update(int id)

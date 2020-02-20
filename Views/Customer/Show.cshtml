@@ -1,29 +1,51 @@
-﻿@model ComicCorner.Models.Customer
+﻿@model ComicCorner.Models.ViewModels.ShowCustomer
 
 @{
     ViewBag.Title = "Show";
 }
 
-<h2>Detail information about @Model.CustomerName</h2>
+<h2>Detail information about @Model.Customer.CustomerName</h2>
 <div class="flexbox">
     <div class="picture">
         @{
-            if (Model.HasPic == 1)
+            if (Model.Customer.HasPic == 1)
             {
-                <img id="customerpicture" src="../../Content/Customers/@(Model.CustomerId).@(Model.PicExtension)" alt="Image of @Model.CustomerName" />
+                <img id="customerpicture" src="../../Content/Customers/@(Model.Customer.CustomerId).@(Model.Customer.PicExtension)" alt="Image of @Model.Customer.CustomerName" />
             }
         }
     </div>
     <div class="detail">
-        <div>Name: @Model.CustomerName</div>
-        <div>Address: @Model.CustomerAddress</div>
-        <div>Email: @Model.CustomerEmail</div>
-        <a href="/Customer/DeleteConfirm/@Model.CustomerId">Delete the customer</a>
-        <a href="/Customer/Update/@Model.CustomerId">Update the customer</a>
+        <div>Name: @Model.Customer.CustomerName</div>
+        <div>Address: @Model.Customer.CustomerAddress</div>
+        <div>Email: @Model.Customer.CustomerEmail</div>
+        <a href="/Customer/DeleteConfirm/@Model.Customer.CustomerId">Delete the customer</a>
+        <a href="/Customer/Update/@Model.Customer.CustomerId">Update the customer</a>
     </div>
-    <div class="showcomment">
-        <div>Recent Activities: </div>
+    <div class="showreview">
+        <div>Recent Reviews: </div>
+        <div class="flexbox">
+            <div class="reviewcontent">
+                
+                @{
+                    foreach (var review in @Model.Reviews)
+                    {
+                        <div>@review.ReviewContent</div>
+                    }
+                }
+                
+            </div>
+            <div class="reviewcomic">
+                
+                @{
+                    foreach (var comic in @Model.Comics)
+                    {
+                       <div><a href="/Comic/Show/@comic.ComicId">@comic.ComicName</a></div>
+                    }
+                }
 
+            </div>
+        </div>
+        
     </div>
 </div>
 

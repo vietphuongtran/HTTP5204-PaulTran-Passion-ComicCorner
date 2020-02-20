@@ -31,7 +31,9 @@
 
                                 if (customer.HasPic == 1)
                                 {
+                                    <a href="/Customer/Show/@(customer.CustomerId)">
                                     <img class="commentpic" src="../../Content/Customers/@(customer.CustomerId).@(customer.PicExtension)" alt="Image of @customer.CustomerName" />
+                                    </a>
                                 }
 
                             }

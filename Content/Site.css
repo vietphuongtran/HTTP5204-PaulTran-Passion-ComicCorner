@@ -88,3 +88,15 @@ h2 {
 #removecomment {
     margin-bottom: 6em;
 }
+.reviewcontent {
+    flex: 3 0 0;
+}
+.reviewcomic {
+    flex: 1 0 0;
+}
+.showreview {
+    flex: 3 0 0;
+}
+.reviewcomic div, .showreview div {
+    margin-bottom: 1.5em;
+}
