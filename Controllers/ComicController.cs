@@ -146,7 +146,7 @@ namespace ComicCorner.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(string ComicName, string ComicDesc, int ComicYear, int ComicPrice, int HasPic)
+        public ActionResult Add(string ComicName, string ComicDesc, int ComicYear, decimal ComicPrice, int HasPic)
         {
             //Write the query
             string query = "Insert into comics (ComicName, ComicDesc, ComicYear, ComicPrice, HasPic) values (@ComicName, @ComicDesc, @ComicYear, @ComicPrice, @HasPic)";
