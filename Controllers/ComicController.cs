@@ -251,7 +251,7 @@ namespace ComicCorner.Controllers
             sqlparams2[1] = new SqlParameter("@CategoryId", CategoryId);
             //Execute
             db.Database.ExecuteSqlCommand(JoinTableQuery, sqlparams2);*/
-            return RedirectToAction("List");
+            return RedirectToAction("Show/" + ComicId);
         }
         //Show the Delete Confirm
         public ActionResult DeleteConfirm(int id)
