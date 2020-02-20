@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add a customer</h2>
+<form class="add" method="post" action="/Customer/Add">
+    <div>Customer Name: <input type="text" name="CustomerName" id="CustomerName" /></div>
+    <div>Customer Address:</div>
+    <div><textarea type="text" name="CustomerAddress" id="CustomerAddress"></textarea></div>
+    <div>Customer Email: <input type="text" name="CustomerEmail" id="CustomerEmail" /></div>
+    <input type="hidden" name="HasPic" value="1" />
+    <div><input type="submit" value="Add a customer" /></div>
+</form>
+<a href="/Customer/List">Back to list</a>

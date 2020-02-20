@@ -24,8 +24,12 @@ namespace ComicCorner.Models
         //One to Many
         //One review belong to one customer 
         //But one customer can have many reviews
-       //public int CustomerId { get; set; }
-       //[ForeignKey("CustomerId")]
-       //public virtual Customer Customer { get; set; }
+
+        //First, must set public int to public int? because the table doesn't allow null data
+        //Then insert into database table and change back to public int
+        public int CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
+
+        public virtual Customer Customer { get; set; }
     }
 }

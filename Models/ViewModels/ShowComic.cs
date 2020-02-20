@@ -15,5 +15,10 @@ namespace ComicCorner.Models.ViewModels
         public List<Category> ddl_Categories { get; set; }
         //showing all the reviews belong to one comic 
         public List<Review> Reviews { get; set; }
+        //showing the one who make the review
+        public List<Customer> Customers { get; set; }
+        //showing all customers in a drop down list
+        public List<Customer> ddl_Customers { get; set; }
+
     }
 }

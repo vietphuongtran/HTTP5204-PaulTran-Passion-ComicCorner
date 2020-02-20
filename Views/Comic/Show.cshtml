@@ -23,29 +23,56 @@
                 <a href="/Comic/DeleteConfirm/@Model.Comic.ComicId">Delete the comic</a>
                 <a href="/Comic/Update/@Model.Comic.ComicId">Update the comic</a>
                 <div>Reviews: </div>
-                @{
-                    foreach (var review in Model.Reviews)
-                    {
-                        <div class="review">@review.ReviewContent</div>
-                        <form method="Post" action="/Comic/RemoveReview/@Model.Comic.ComicId">
-                            <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
-                            <div><input type="hidden" name="ReviewId" id="ReviewId" value="@review.ReviewId" />
-                            <input type="submit" value="Remove" /></div>
-                        </form>
+                <div class="flexbox">
+                    <div class="picture">
+                        @{
+                            foreach (var customer in Model.Customers)
+                            {
 
-                    }
+                                if (customer.HasPic == 1)
+                                {
+                                    <img class="commentpic" src="../../Content/Customers/@(customer.CustomerId).@(customer.PicExtension)" alt="Image of @customer.CustomerName" />
+                                }
 
-                }
-                <!--Adding review to a comic-->
-                <form  method="Post" action="/Comic/AddReview/@Model.Comic.ComicId">
-                    <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
-                    <textarea name="ReviewContent" id="ReviewContent"></textarea>
-                    <div><input type="submit" value="Add a review" /></div>
-                </form>
-                <!--Todo: Adding users-->
-            </div>            
+                            }
+
+                        }
+                    </div>
+                    <div class="detail">
+                        @{
+                            foreach (var review in Model.Reviews)
+                            {
+                                <div class="detail"> @review.ReviewContent</div>
+                                <form id="removecomment" method="Post" action="/Comic/RemoveReview/@Model.Comic.ComicId">
+                                    <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />                                    
+                                        <input type="hidden" name="ReviewId" id="ReviewId" value="@review.ReviewId" />
+                                        <input type="submit" value="Remove" />                                    
+                                </form>
+                            }
+                        }
+                    </div>
+                </div>
+                <div>
+                    <!--Adding review to a comic-->
+                    <form method="Post" action="/Comic/AddReview/@Model.Comic.ComicId">
+                        <input type="hidden" name="ComicId" id="ComicId" value="@Model.Comic.ComicId" />
+                        <textarea name="ReviewContent" id="ReviewContent"></textarea>
+                        <div>Adding comment as: 
+                            <select id="CustomerId" name="CustomerId">
+                                @{
+                                    foreach (var customer in @Model.ddl_Customers)
+                                    {
+                                        <option value="@customer.CustomerId">@customer.CustomerName</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div><input type="submit" value="Add a review" /></div>
+                    </form>
+                    <!--Todo: Adding users-->
+                </div>
+            </div>
         </div>
-        
     </div>
     <div id="ShowComicCategory">
         <div>Categories:</div>

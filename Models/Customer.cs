@@ -23,6 +23,6 @@ namespace ComicCorner.Models
         //contain options like .jpg, .jpeg, .gif, .png
         public string PicExtension { get; set; }
 
-       //public ICollection<Review> Reviews { get; set; }
+       public ICollection<Review> Reviews { get; set; }
     }
 }

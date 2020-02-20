@@ -123,5 +123,51 @@ namespace ComicCorner.Controllers
             //return to the List
             return RedirectToAction("List");
         }
+        public ActionResult DeleteConfirm(int id)
+        {
+            //Display selected customer
+            Customer selectedcustomer = db.Customers.SqlQuery("select * from Customers where CustomerId = @id", new SqlParameter("@id", id)).FirstOrDefault();
+            return View(selectedcustomer);
+        }
+        [HttpPost]
+        public ActionResult DeleteConfirm(int CustomerId, int id)
+        {
+            //Delete the reviews made by a specific customer
+            string DeleteFromReviews = "Delete from Reviews where CustomerId= @CustomerId";
+            SqlParameter[] sqlparams = new SqlParameter[1];
+            sqlparams[0] = new SqlParameter("@CustomerId", CustomerId);
+            db.Database.ExecuteSqlCommand(DeleteFromReviews, sqlparams);
+
+            //Delete from Customers table
+            string DeleteCustomer = "Delete from Customers where CustomerId = @CustomerId";
+            SqlParameter[] sqlparams2 = new SqlParameter[1];
+            sqlparams2[0] = new SqlParameter("@CustomerId", CustomerId);
+            db.Database.ExecuteSqlCommand(DeleteCustomer, sqlparams2);
+
+            return RedirectToAction("List");
+        }
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add(string CustomerName, string CustomerAddress, string CustomerEmail, int HasPic)
+        {
+            //Write the query
+            string query = "Insert into customers (CustomerName, CustomerAddress, CustomerEmail, HasPic) values (@CustomerName, @CustomerAddress, @CustomerEmail, @HasPic)";
+            Debug.WriteLine("I am trying to add " + CustomerName);
+            //Parameterized query
+            SqlParameter[] sqlparams = new SqlParameter[4];
+            sqlparams[0] = new SqlParameter("@CustomerName", CustomerName);
+            sqlparams[1] = new SqlParameter("@CustomerAddress", CustomerAddress);
+            sqlparams[2] = new SqlParameter("@CustomerEmail", CustomerEmail);
+            sqlparams[3] = new SqlParameter("@HasPic", HasPic);
+
+            //Execute Query
+            db.Database.ExecuteSqlCommand(query, sqlparams);
+            //return to the List
+            return RedirectToAction("List");
+        }
     }
 }

@@ -165,7 +165,6 @@ E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Syst
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Newtonsoft.Json.xml
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Antlr3.Runtime.pdb
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csprojAssemblyReference.cache
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial1.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.initial2.resources
@@ -192,3 +191,6 @@ E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debu
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.removeComicPricefromCustomers.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingdatatypeofcustomeradd.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.removeforeignkey.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.onetomany.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingrelationshipsuccessfully.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csprojAssemblyReference.cache

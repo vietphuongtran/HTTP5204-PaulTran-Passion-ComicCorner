@@ -224,12 +224,21 @@
     <Compile Include="Migrations\202002192143252_remove foreign key.designer.cs">
       <DependentUpon>202002192143252_remove foreign key.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002192207335_one to many.cs" />
+    <Compile Include="Migrations\202002192207335_one to many.designer.cs">
+      <DependentUpon>202002192207335_one to many.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002192214504_changing relationship successfully.cs" />
+    <Compile Include="Migrations\202002192214504_changing relationship successfully.designer.cs">
+      <DependentUpon>202002192214504_changing relationship successfully.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\ViewModels\ShowCategory.cs" />
     <Compile Include="Models\ViewModels\ShowComic.cs" />
+    <Compile Include="Models\ViewModels\ShowCustomer.cs" />
     <Compile Include="Models\ViewModels\UpdateComic.cs" />
     <Compile Include="Models\Comic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -284,6 +293,7 @@
     <Content Include="Views\Customer\Update.cshtml" />
     <Content Include="Views\Customer\Show.cshtml" />
     <Content Include="Views\Customer\DeleteConfirm.cshtml" />
+    <Content Include="Views\Customer\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -370,6 +380,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002192143252_remove foreign key.resx">
       <DependentUpon>202002192143252_remove foreign key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002192207335_one to many.resx">
+      <DependentUpon>202002192207335_one to many.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002192214504_changing relationship successfully.resx">
+      <DependentUpon>202002192214504_changing relationship successfully.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

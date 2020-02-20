@@ -81,3 +81,10 @@ h2 {
     height: 100px;
     margin: 1em;
 }
+.commentpic {
+    width: 5%;
+    height: auto;
+}
+#removecomment {
+    margin-bottom: 6em;
+}

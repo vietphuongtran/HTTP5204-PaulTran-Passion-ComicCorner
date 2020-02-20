@@ -60,10 +60,22 @@ namespace ComicCorner.Controllers
             string ShowDdlCategory = "select * from Categories";
             List<Category>AddedCategories = db.Categories.SqlQuery(ShowDdlCategory).ToList();
 
+            //display dropdown list to choose the one who made the comment
+            //in real life, customer may have 2 account in a website under the same email but that's rare
+            //this is just to demonstrate feature in this assignment
+            string ShowDdlCustomer = "select * from Customers";
+            List<Customer>AddedCustomers = db.Customers.SqlQuery(ShowDdlCustomer).ToList();
+
             //display all comment belong to a comic
             string ShowAllReviews = "select * from Reviews where ComicId=@id";
             SqlParameter param2 = new SqlParameter("@id", id);
             List<Review> AllReviews = db.Reviews.SqlQuery(ShowAllReviews, param2).ToList();
+            Debug.WriteLine("I am trying to list all the reviews");
+
+            //display the one who make the comment
+            string ShowCustomer = "select * from customers inner join reviews on customers.customerid = reviews.customerid where reviews.comicid = @id";
+            SqlParameter param3 = new SqlParameter("@id", id);
+            List<Customer> AllCustomer = db.Customers.SqlQuery(ShowCustomer, param3).ToList();
             Debug.WriteLine("I am trying to list all the reviews");
 
             ShowComic viewmodel = new ShowComic();
@@ -71,18 +83,21 @@ namespace ComicCorner.Controllers
             viewmodel.Categories = CurrentCategories; //display the category a comic belong to
             viewmodel.ddl_Categories = AddedCategories; //display the dropdown list to add the comics
             viewmodel.Reviews = AllReviews;
+            viewmodel.ddl_Customers = AddedCustomers;
+            viewmodel.Customers = AllCustomer;
 
             return View(viewmodel);
         }
         //Add the review into a post
         [HttpPost]
-        public ActionResult AddReview(int ComicId, string ReviewContent)
+        public ActionResult AddReview(int ComicId, string ReviewContent, int CustomerId)
         {
-            string query = "Insert into reviews (ReviewContent, ComicId) values (@ReviewContent, @ComicId)";
+            string query = "Insert into reviews (ReviewContent, ComicId, CustomerId) values (@ReviewContent, @ComicId, @CustomerId)";
             Debug.WriteLine("I am trying to add a review with the content " + ReviewContent + " into the Comic " + ComicId );
-            SqlParameter[] sqlparams = new SqlParameter[2];
+            SqlParameter[] sqlparams = new SqlParameter[3];
             sqlparams[0] = new SqlParameter("@ComicId", ComicId);
             sqlparams[1] = new SqlParameter("@ReviewContent", ReviewContent);
+            sqlparams[2] = new SqlParameter("@CustomerId", CustomerId);
             //Execute
             db.Database.ExecuteSqlCommand(query, sqlparams);
             return RedirectToAction("Show/" + ComicId);
