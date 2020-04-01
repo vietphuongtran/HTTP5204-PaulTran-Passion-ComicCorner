@@ -139,7 +139,7 @@ namespace ComicCorner.Controllers
 
             return RedirectToAction("Show/" + ComicId);
         }
-        //send the HTTP Get method to display the adding page
+        //This code is to display the adding page
         public ActionResult Add()
         {
             return View();
