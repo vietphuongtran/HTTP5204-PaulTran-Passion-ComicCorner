@@ -195,3 +195,4 @@ E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debu
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingrelationshipsuccessfully.resources
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.csprojAssemblyReference.cache
 E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.changingpricetofloat.resources
+E:\WebDev\sem2\HTTP5204-MobileDev\assignment\PassionProject\ComicCorner\obj\Debug\ComicCorner.Migrations.updatecarddesign.resources

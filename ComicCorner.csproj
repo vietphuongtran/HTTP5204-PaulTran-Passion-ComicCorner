@@ -236,6 +236,10 @@
     <Compile Include="Migrations\202002201411233_changing price to float.designer.cs">
       <DependentUpon>202002201411233_changing price to float.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004012354554_update card design.cs" />
+    <Compile Include="Migrations\202004012354554_update card design.designer.cs">
+      <DependentUpon>202004012354554_update card design.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -393,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002201411233_changing price to float.resx">
       <DependentUpon>202002201411233_changing price to float.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004012354554_update card design.resx">
+      <DependentUpon>202004012354554_update card design.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
